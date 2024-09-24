@@ -1,0 +1,12 @@
+import scipy.integrate as integrate
+
+# Define the function f(x) = x^2
+def f(x):
+    return x**2
+
+# Perform the integration over the range [0, 5]
+result, error = integrate.quad(f, 0, 5)
+
+# Display the result
+print(f"Result of the integration: {result}")
+print(f"Estimated error: {error}")
