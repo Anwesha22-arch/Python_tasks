@@ -1,0 +1,11 @@
+import numpy as np
+from scipy.optimize import minimize
+
+def f(x):
+    return (x - 3)**2 + 2
+
+x0 = 0  # Initial guess
+result = minimize(f, x0)
+
+print("The minimum value of the function is:", result.fun)
+print("The value of x at the minimum is:", result.x)
