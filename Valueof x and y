@@ -1,0 +1,12 @@
+import numpy as np
+
+# Coefficient matrix
+A = np.array([[2, 3], [4, 1]])
+
+# Constant matrix
+B = np.array([5, 6])
+
+# Solve the system of equations
+X = np.linalg.solve(A, B)
+
+print(f"The solution is x = {X[0]}, y = {X[1]}")
